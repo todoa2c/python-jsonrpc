@@ -4,8 +4,8 @@
 import sys
 import traceback
 import uuid
-import rpcerror
-import rpcjson
+from pyjsonrpc import rpcerror
+from pyjsonrpc import rpcjson
 try:
     from munch import Munch as Bunch
 except ImportError as err:

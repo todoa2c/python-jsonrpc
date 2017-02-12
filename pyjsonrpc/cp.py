@@ -9,12 +9,11 @@ http://cherrypy.readthedocs.org/
 
 import os
 import httplib
-import rpclib
-import rpcrequest
+from pyjsonrpc import rpclib
+from pyjsonrpc import rpcrequest
 import cherrypy
-import rpcjson
-import rpcerror
-import tools
+from pyjsonrpc import rpcjson
+from pyjsonrpc import tools
 
 # ToDo: Replace compress and decompress with faster methods
 from cherrypy.lib.encoding import compress

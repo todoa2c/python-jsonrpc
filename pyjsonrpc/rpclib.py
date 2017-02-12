@@ -2,11 +2,11 @@
 # coding: utf-8
 
 import logging
-import rpcrequest
-import rpcresponse
-import rpcerror
-import rpcjson
-from tools import safe_unicode
+from pyjsonrpc import rpcrequest
+from pyjsonrpc import rpcresponse
+from pyjsonrpc import rpcerror
+from pyjsonrpc import rpcjson
+from pyjsonrpc.tools import safe_unicode
 
 
 def rpcmethod(func):

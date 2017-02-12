@@ -15,12 +15,12 @@ import gzip
 import tempfile
 import Cookie
 import logging
-import rpcrequest
-import rpcresponse
-import rpcerror
-import rpclib
-import rpcjson
-import tools
+from pyjsonrpc import rpcrequest
+from pyjsonrpc import rpcresponse
+from pyjsonrpc import rpcerror
+from pyjsonrpc import rpclib
+from pyjsonrpc import rpcjson
+from pyjsonrpc import tools
 
 
 # Workaround for Google App Engine
@@ -555,13 +555,13 @@ def handle_cgi_request(methods = None):
     response_json = rpclib.JsonRpc(methods = methods).call(request_json)
 
     # Return headers
-    print "Content-Type: application/json"
-    print "Cache-Control: no-cache"
-    print "Pragma: no-cache"
-    print
+    print("Content-Type: application/json")
+    print("Cache-Control: no-cache")
+    print("Pragma: no-cache")
+    print()
 
     # Return result
-    print response_json
+    print(response_json)
 
 
 
