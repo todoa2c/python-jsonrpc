@@ -53,6 +53,9 @@ setup(
         "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
         "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
     ],
-    install_requires = ["munch"],
+    install_requires = [
+        "munch",
+        "cherrypy",
+    ],
 )
 
